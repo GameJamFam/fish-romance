@@ -21,8 +21,22 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Barnaby": "res://DialogicChars/Barnaby.dch",
+"Charlene": "res://DialogicChars/Charlene.dch",
+"Eeliott": "res://DialogicChars/Eeliott.dch",
+"Franklin": "res://DialogicChars/Franklin.dch",
+"Hollandaise": "res://DialogicChars/Hollandaise.dch",
+"Jacques": "res://DialogicChars/Jacques.dch",
+"Meelody": "res://DialogicChars/Meelody.dch",
+"Romeo": "res://DialogicChars/Romeo.dch",
+"Smitty": "res://DialogicChars/Smitty.dch"
+}
+directories/dtl_directory={
+"Day1 Intro": "res://Timelines/Day1 Intro.dtl"
+}
+glossary/default_case_sensitive=true
+variables={}
 
 [editor_plugins]
 
