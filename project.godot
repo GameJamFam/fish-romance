@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Fish-romance"
-run/main_scene="res://MainMenu.tscn"
+run/main_scene="res://Scenes/MainMenu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -28,15 +28,54 @@ directories/dch_directory={
 "Franklin": "res://DialogicChars/Franklin.dch",
 "Hollandaise": "res://DialogicChars/Hollandaise.dch",
 "Jacques": "res://DialogicChars/Jacques.dch",
+"MC": "res://DialogicChars/MC.dch",
 "Meelody": "res://DialogicChars/Meelody.dch",
 "Romeo": "res://DialogicChars/Romeo.dch",
 "Smitty": "res://DialogicChars/Smitty.dch"
 }
 directories/dtl_directory={
-"Day1 Intro": "res://Timelines/Day1 Intro.dtl"
+"1Day Intro": "res://Timelines/1Day Intro.dtl",
+"1Night Bar": "res://Timelines/1Night Bar.dtl"
 }
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"AccessibleAreas": {
+"Bar": false,
+"BarnabyHome": false,
+"EeliottHome": false,
+"JacquesHome": false,
+"Library": false,
+"Station": false,
+"Vent": false
+},
+"Player": {
+"highscore": 0,
+"name": "MC"
+},
+"RomancePoints": {
+"Barnaby": 0,
+"Eeliott": 0,
+"Jacques": 0
+}
+}
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+text/autopauses={}
+layout/style_list=[]
+layout/default_style="Default"
 
 [editor_plugins]
 

@@ -1,0 +1,18 @@
+[music fade="0.0" volume="0.0"]
+It's a dark day out there. The bright lights of the police station are a harsh way to start any morning, but today just happens to be the least pleasant morning you've experienced in quite a while.
+join Franklin 1
+Franklin: Dammit, {Player.name}! I need you to focus. This is the biggest case this town has seen, and you owe it to the citizens to take this seriously.
+The morning has not been improved by the local chief of police.
+MC: Sorry, Frank. It was a cold morning today, I'm still warming up.
+Chief Franklin glares at you.
+Franklin: And it's only going to get colder until you get to the bottom of this. It's not every day some fish plugs up a vent, especially not around here!
+Franklin: Maybe this is humdrum stuff compared to the big fish city cases you've seen, but remember that these are real fish we're talking about!
+A few days ago, the local geothermal vent was vandalized. Without power or heat, the townsfish have had to rely on backup generators running around the clock to survive the cold, murky waters.
+MC: I'm taking this seriously, chief, but this should be through in a few days. I expect that after a few interviews, someone's going to crack. Nobody could have done this alone, and the only way two fish can keep a secret is if one of them is dead.
+MC: Since nobody has died in the last few days, that means I just need to find the right person to squeeze for information and I'll find an accomplice.
+Franklin: Hmph.
+Franklin: Well, see that you're quick about it. Our infrastructure is in hot water without that vent.
+leave Franklin
+MC: I'd better head into town to see if I can't begin my interviews.
+MC: But maybe just a few minutes to get my desk organized underneath this heat lamp...
+jump 1Night Bar/
