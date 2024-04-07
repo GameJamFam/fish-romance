@@ -1,0 +1,9 @@
+if {1Night.DrinkDelivered} == false:
+	set {1Night.DrinkDelivered} = true
+	join Charlene 2
+	if {1Night.Drink} == "wine":
+		Charlene: Here's the wine. Took a while to find, but hopefully the moss is some indication of quality.
+	else:
+		Charlene: Here's the fish {1Night.Drink} you ordered.
+	leave Charlene
+return

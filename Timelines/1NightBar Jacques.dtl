@@ -1,0 +1,39 @@
+join Jacques (Neutral) 1
+A very handsome (and single) shrimp sits alone at the bar.
+Jacques: Good evening, friend. May I ask your name?
+MC: It's {Player.name}.
+Jacques: Ah, {Player.name}. Enchanté. My name is Jacques.
+Jacques: Tell me, how long have you been in our little town?
+MC: Just since this morning.
+Jacques: Ah, then you haven't seen us at our best. I trust you've heard of our tragic accident?
+MC: I have, as a matter of fact. I'm conducting an investigation into the matter.
+Jacques: Oh, how exciting! It's been so hard for the past few days. Luckily my house has backup power, but I shudder to think what will become of those less fortunate.
+MC: I take it your home is still well lit and heated?
+Jacques: Oh yes, it's important to me to find greener alternatives than the vent. While I do have a generator, 60% of my energy needs are met by the output from my gym.
+Jacques: So long as I get four to six hours of working out in a day, I'm able to heat my home and light my yard with abandon.
+Jacques: At least, when I am home. Most of the time I'm too busy donating money, or winning competitions.
+MC: So, you're a philanthropist by trade?
+Jacques: A bodybuilder AND a philanthropist.
+Jacques (Sad): Quite the catch, though I haven't had any luck so far.
+jump 1NightBar Drink Deliver/
+if {1Night.Drink} == "wine":
+	Jacques: I say, is that a 1993 Pinot Noir from the [i]Izu-Ogasawara[/i] region?
+	- Yes.
+		Jacques (Happy): Oho, you're familiar! I leave that enjoyment to you.
+	- I'm not sure.
+		Jacques (Happy): Unless my nose decieves me, I believe it is!
+	Jacques: Your typical Pinot Noir is reknowned for having a light body with farmyard aromas, but the delicate flavors of the IO variety are something else to betaste. [i]sip[/i]
+	Jacques: Imagine a cornucopia of sweet summer berries with a sharp edge of pomegranate that travels down the length of your spine. It's like being punched in the throat. [i]sip sip sip[/i]
+	Jacques: It's a difficult cultivar, especially underwater\: wine critics the world over describe it as "a minx of a vine".
+	MC: Th-
+	Jacques: Ah, but the journey of the mind that it promises is not one to turn down, my friend! [i]siiiiip[/i]
+	Jacques: I must commend you on your generosity. Now, then\: to business.
+	set {RomancePoints.Jacques} += 1
+else:
+	Jacques: Ah, I see you prefer a fine fish-{1Night.Drink} as your libation of choice.
+Jacques: If you're looking to learn more about our little town, you'd do well to start interviews. Talk to as many people as possible, though there's never enough time in the day.
+Jacques: I should know, if I had all the time in the world I'd make sure every penniless orphan had enough.
+MC: Good to know. It was nice to meet you, Jacques.
+set {1Night.SpokeJacques} = true
+leave Jacques
+return

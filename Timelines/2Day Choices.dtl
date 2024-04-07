@@ -1,0 +1,38 @@
+[music path="res://assets/Tunes & Bops/Wayfall/BGM/ShrimpVillage.ogg" fade="0.0" volume="0.0"]
+[background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
+A new day. Normally mornings are brighter for you, but here in the mesopelagic layer, nothing changes.
+The water feels colder.
+You've got some mail waiting in your inbox.
+if {1Night.SpokeBarnaby} == true:
+	set {AccessibleAreas.BarnabyHome} = true
+	You received a letter from Barnaby.
+	Barnaby: Hi again! I thought more about your investigation, I think you should talk to my roommmate. He knows a lot more people!
+if {1Night.SpokeEeliott} == true and !{RomancePoints.EeliottKnowsYoureACop}:
+	set {AccessibleAreas.EeliottHome} = true
+	You received a letter from Eeliott.
+	Eeliott: Hey. You should stop by my studio today.
+if {1Night.SpokeJacques} == true:
+	set {AccessibleAreas.JacquesHome} = true
+	You received a letter from Jacques. A small note at the bottom reads "Formal Invitation to Mansion (variant 2 of 7).
+	Jacques: Dear [b]{Player.name}[/b], it was so nice to meet your acquaintance [b]last night[/b]. I would like to cordially invite you to my mansion some time today, either during the day or the evening. There is [b]no[/b] need to RSVP.
+Where will you spend the day?
+set {AccessibleAreas.Bar} = true
+set {AccessibleAreas.Vent} = true
+set {AccessibleAreas.Library} = false
+set {AccessibleAreas.Station} = true
+- Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
+	jump 2Day Bar/
+- Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
+	jump 2Day Vent/
+- Library [if {AccessibleAreas.Library} == true][else="hide"]
+	jump 
+- Police Station [if {AccessibleAreas.Station} == true][else="hide"]
+	jump 2Day Station/
+- Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
+	jump 2Day Jacques/
+- Eeliott's Arthaus [if {AccessibleAreas.EeliottHome} == true][else="hide"]
+	jump 2Day Eeliott/
+- Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
+	jump 2Day Barnaby/
+[music fade="2.0" volume="0.0"]
+jump 2Night Choices/

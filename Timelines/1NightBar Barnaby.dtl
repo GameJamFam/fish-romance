@@ -1,0 +1,23 @@
+join Barnaby (Neutral) 1
+A sturgeon sits alone, deeply engrossed in a book.
+MC: Sorry to bother you, friend. My name's {Player.name}. I was wondering if I could ask you a few questions.
+Barnaby: Oh! Good to meet you, I'm Barnaby.
+MC: Barnaby, word on the street is that the local power supply has gone down. Given that this is a pretty small town, have you seen or heard anything?
+Barnaby: Hmm, I certainly haven't caught any confessions. Messing with that vent really puts a lot of pressure on everyone, I can't think of who might benefit.
+MC: Good to know. Barnaby, what do you like to do in your spare time?
+Barnaby (Happy): Oh, I play video games! I'd like to be a developer once I get out of school.
+Barnaby: I'm not really happy in my major at the moment, all of my classes are super difficult.
+MC: I'm sorry to hear that, why so?
+Barnaby: Well, it's not that the coursework is tough. I just can't seem to make any friends.
+Barnaby: Even online, I just don't know how to talk to people.
+jump 1NightBar Drink Deliver/
+if {1Night.Drink} == "wine" and {1Night.DrinkDelivered} == false:
+	Barnaby: Whoa, classy.
+else:
+	Barnaby: Nothing like a nice {1Night.Drink} at the end of the day, am I right?
+Barnaby: I do have to get going pretty shortly here, but it was good to meet you! If I hear anything, I'll let you know.
+MC: Take care, Barnaby.
+set {1Night.SpokeBarnaby} = true
+set {RomancePoints.Barnaby} += 1
+leave Barnaby
+return

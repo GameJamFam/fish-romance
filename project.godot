@@ -35,10 +35,43 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "1Day Intro": "res://Timelines/1Day Intro.dtl",
-"1Night Bar": "res://Timelines/1Night Bar.dtl"
+"1Night Bar": "res://Timelines/1Night Bar.dtl",
+"1NightBar Barnaby": "res://Timelines/1NightBar Barnaby.dtl",
+"1NightBar Drink Deliver": "res://Timelines/1NightBar Drink Deliver.dtl",
+"1NightBar Eeliott": "res://Timelines/1NightBar Eeliott.dtl",
+"1NightBar Jacques": "res://Timelines/1NightBar Jacques.dtl",
+"2Day Bar": "res://Timelines/2Day Bar.dtl",
+"2Day Barnaby": "res://Timelines/2Day Barnaby.dtl",
+"2Day Choices": "res://Timelines/2Day Choices.dtl",
+"2Day Eeliott": "res://Timelines/2Day Eeliott.dtl",
+"2Day Jacques": "res://Timelines/2Day Jacques.dtl",
+"2Day Station": "res://Timelines/2Day Station.dtl",
+"2Day Vent": "res://Timelines/2Day Vent.dtl",
+"2Night Choices": "res://Timelines/2Night Choices.dtl"
 }
 glossary/default_case_sensitive=true
 variables={
+"1Night": {
+"Conversations": 0,
+"Drink": "",
+"DrinkDelivered": false,
+"SpokeBarnaby": false,
+"SpokeEeliott": false,
+"SpokeJacques": false
+},
+"2Day": {
+"SpokeBarnaby": false,
+"SpokeEeliott": false,
+"SpokeJacques": false,
+"SpokeNone": true
+},
+"2Night": {},
+"3Day": {},
+"3Night": {},
+"4Day": {},
+"4Night": {},
+"5Day": {},
+"5Night": {},
 "AccessibleAreas": {
 "Bar": false,
 "BarnabyHome": false,
@@ -55,6 +88,7 @@ variables={
 "RomancePoints": {
 "Barnaby": 0,
 "Eeliott": 0,
+"EeliottKnowsYoureACop": false,
 "Jacques": 0
 }
 }
@@ -80,6 +114,28 @@ layout/default_style="Default"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[importer_defaults]
+
+texture={
+"compress/channel_pack": 0,
+"compress/hdr_compression": 1,
+"compress/high_quality": false,
+"compress/lossy_quality": 0.7,
+"compress/mode": 1,
+"compress/normal_map": 0,
+"detect_3d/compress_to": 1,
+"mipmaps/generate": false,
+"mipmaps/limit": -1,
+"process/fix_alpha_border": true,
+"process/hdr_as_srgb": false,
+"process/hdr_clamp_exposure": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"process/size_limit": 0,
+"roughness/mode": 0,
+"roughness/src_normal": ""
+}
 
 [input]
 

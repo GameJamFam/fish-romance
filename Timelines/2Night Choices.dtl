@@ -1,0 +1,26 @@
+[music path="res://assets/Tunes & Bops/Wayfall/BGM/ShrimpVillage.ogg" fade="0.0" volume="0.0"]
+[background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
+Where will you spend the night?
+set {AccessibleAreas.BarnabyHome} = false
+set {AccessibleAreas.EeliottHome} = false
+set {AccessibleAreas.JacquesHome} = false
+set {AccessibleAreas.Bar} = true
+set {AccessibleAreas.Vent} = true
+set {AccessibleAreas.Library} = false
+set {AccessibleAreas.Station} = true
+- Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
+	jump 
+- Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
+	jump 
+- Library [if {AccessibleAreas.Library} == true][else="hide"]
+	jump 
+- Police Station [if {AccessibleAreas.Station} == true][else="hide"]
+	jump 
+- Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
+	jump 
+- Eeliott's Arthaus [if {AccessibleAreas.EeliottHome} == true][else="hide"]
+	jump 
+- Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
+	jump 
+[music fade="2.0" volume="0.0"]
+jump 2Night Choices/

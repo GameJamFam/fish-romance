@@ -1,22 +1,24 @@
 extends Node
+@export var GAME : PackedScene
+@export var ResetButton: MarginContainer
+@export var ResetModal: Panel
 
 @onready var main = $CanvasLayer/Main
 @onready var control = $CanvasLayer/Controls
 @onready var credits = $CanvasLayer/Credits
 
 func _ready():
-	main.visible = true
-	control.visible = false
-	credits.visible = false
+	back_to_main()
 
 func start_game():
-	get_tree().change_scene_to_file("res://Scenes/MainGame/MainGame.tscn")
+	get_tree().change_scene_to_packed(GAME)
 
 # Return to the main menu from any submenu.
 func back_to_main():
 	main.visible = true
 	control.visible = false
 	credits.visible = false
+	ResetButton.visible = Dialogic.Save.has_slot('Test')
 
 func show_controls():
 	main.visible = false
@@ -35,3 +37,16 @@ func hover_button():
 
 func click_button():
 	$ClickFX.play()
+
+func reset_save():
+	Dialogic.Save.delete_slot('Test')
+	hide_reset_modal()
+
+func show_reset_modal():
+	$CanvasLayer/Main/VBoxContainer.visible = false
+	ResetModal.visible = true
+
+func hide_reset_modal():
+	$CanvasLayer/Main/VBoxContainer.visible = true
+	ResetModal.visible = false
+	back_to_main()

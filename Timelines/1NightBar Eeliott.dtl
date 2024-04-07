@@ -1,0 +1,39 @@
+join Eeliott (Neutral) 1
+An eel sits alone, nursing a large water bottle and a grimace.
+Eeliott: What do you want?
+MC: Hi there, my name's {Player.name}.
+- I'm investigating the recent vent destruction.
+	set {RomancePoints.Eeliott} -= 1
+	set {RomancePoints.EeliottKnowsYoureACop} = true
+	Eeliott (Negative): So you're a cop, then?
+	MC: Technically I'm on vacation, but I got roped into this. I'm wondering if I could ask you some questions.
+	Eeliott: I don't know anything about it, and both Charlene and Romeo can vouch for me being here all the time.
+	MC: Who's Romeo?
+	Eeliott: He's the barista who runs this coffee shop.
+	MC: I thought this was a bar.
+	Eeliott (Happy): Charlene would be happy to hear you say it. They both own the building but can't agree on what it's for.
+	Eeliott: Shift changes get pretty hairy around here.
+	Eeliott: Anyhow, I'd better get going. I've got some art to finish up.
+	- What kind of art do you do?
+		set {RomancePoints.Eeliott} += 1
+		Eeliott (Neutral): I do a lot of mixed media\: some sculpture, painting, among other things.
+		Eeliott: But my latest project is by far my most ambitious. If you like, you can stop by and check it out tomorrow.
+	- Have a good night.
+		Eeliott heads out the door.
+		jump 1NightBar Drink Deliver/
+- I'm new in town and wanted to start meeting people.
+	Eeliott: You picked a bad time to move in, then. The whole town is freaking out since we lost power.
+	MC: I'd heard a bit about that, what happened?
+	Eeliott: Apparently, someone plugged up the geothermal vent. Nobody knows who did it, and everyone is freaking out.
+	MC: You don't seem to perturbed about it.
+	Eeliott: Don't get me wrong, it's not good. But I'm not a civil engineer, how am I going to fix this?
+	jump 1NightBar Drink Deliver/
+	Eeliott: Besides that, I've got my own project to work on. Hopefully something that gets people more interested in the world around us.
+	MC: What do you do?
+	Eeliott: I'm an artist, and I just know my latest piece is going to get people to care more about the environment.
+	Eeliott (Negative): That is, if I can just get people to look at it.
+	Eeliott: Anyhow, I've got to get going now. But it was nice to meet you, {Player.name}.
+	MC: Good to meet you, Eeliott.
+set {1Night.SpokeEeliott} = true
+leave Eeliott
+return

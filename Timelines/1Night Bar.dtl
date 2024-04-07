@@ -1,5 +1,43 @@
-[music fade="0.0" volume="0.0"]
-The bar has a classy ambience. You don't necessarily regret spending six hours organizing your paperclips, but it does put a serious crunch on your interview time. 
-Besides that, you haven't even had time to sort your tchotchkes alphabetically yet. 
+[background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
+The bar has a classy ambience. You don't necessarily regret spending six hours organizing your paperclips, but it does put a serious crunch on your interview time.
+Besides that, you haven't even had time to sort your tchotchkes alphabetically yet.
 Best run through a few interviews and set back to the office, post haste. The bartender should be a good start.
-join Charlene 2
+join Charlene (Happy) 2
+Charlene: Welcome to Hair of the Dogfish. What can I get you, stranger? We've got fish beer on tap, though you strike me as a fish-liquor type.
+MC: What?
+Charlene: Fish-whiskey on the rocks, fish-martinis, that sort of thing. I can probably find a bottle of Pinot Noir if you like.
+- Beer
+	set {1Night.Drink} = "beer"
+	MC: One {1Night.Drink}, please.
+- Whiskey
+	set {1Night.Drink} = "whiskey"
+	MC: One {1Night.Drink}, please.
+- Martini
+	set {1Night.Drink} = "martini"
+	MC: One {1Night.Drink}, please.
+- Wine
+	set {1Night.Drink} = "wine"
+	MC: I'll try the wine, actually.
+if {1Night.Drink} == "wine":
+	Charlene: Huh. You must have a sophisticated palate.
+else:
+	Charlene: One fish {1Night.Drink}, coming up.
+leave Charlene
+The bartender leaves, and you take a look around the bar. It's not a busy night, only a handful of people are here.
+Among the patrons are a shrimp enjoying a champagne flute, a sturgeon reading in a booth, and an eel glowering at their phone.
+label 1Night Conversations
+- Talk to Shrimp [if {1Night.SpokeJacques} == false][else="hide"]
+	jump 1NightBar Jacques/
+
+- Talk to Eel [if {1Night.SpokeEeliott} == false][else="hide"]
+	jump 1NightBar Eeliott/
+
+- Talk to Sturgeon [if {1Night.SpokeBarnaby} == false][else="hide"]
+	jump 1NightBar Barnaby/
+
+set {1Night.Conversations} += 1
+if {1Night.Conversations} <= 1:
+	jump 1Night Conversations
+The night is getting late, and the bartender signals that it's closing time. You've got quite a few facts to sort out back at work...
+jump 2Day Choices/
