@@ -1,0 +1,23 @@
+join Franklin 1
+Franklin: Hi, {Player.name}! what are you up to today?
+MC: Well Frank, thought I'd spend the day here.
+MC: I see we have a visitor,that's new.
+join Hollandaise 2
+Hollandaise: Our town is still in peril. Is anybody investigating what happened to the vent?
+Franklin: These things take time a proper investigation. Can't be rushed after all.
+Franklin: Besides, Hollandaise. I don't know if you've noticed, but our break room is finally getting some use.
+Hollandaise: You have a break room in here? Why?
+Hollandaise: You're the only person on the force
+Franklin: Not true! Now there's {Player.name}, and frankly I've come to like him over the past few days.
+Franklin: I think he's an upstanding member of the community.
+Hollandaise: Be that as it may, we're not going to have a community for much longer unless this gets solved!
+Franklin: Hollandaise, you're taking this too seriously.
+MC: Yeah, come on Hollandaise. Don't you want to sit down, maybe play some air hockey?
+Hollandaise: Even if you did have an air hockey table in there, and even if I wasn't the greatest air hockey player in the world this is still fairly important. We're running out of power, if we don't -
+MC: Hollandaise, let me stop you right there. We have a vintage 1987 ultra deluxe Brolten & Maverick air hockey table.
+Hollandaise: You're telling me that in that break room back there, you have got the most sought-after air hockey table in all of history?
+MC: Hollandaise, that is precisely what I'm telling you, and I am looking for a good matchup.
+Hollandaise: If I beat you will you at least spend tonight investigating? We're going to run out of power.
+MC: Well, we'll see about that.
+leave --All--
+return

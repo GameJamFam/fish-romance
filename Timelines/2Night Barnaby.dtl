@@ -1,0 +1,22 @@
+[background arg="res://assets/Backgrounds/Barnaby’s Dorm.png" fade="0.0"]
+[music fade="0.0" volume="0.0"]
+join Barnaby (Neutral) 1
+Barnaby: Oh, hi again, {Player.name}, how are you doing?
+MC: Oh, just fine. Thought I'd stop by again, see how you were doing.
+if {2Day.SpokeBarnaby} == true:
+	Barnaby: Oh man, even though we spent the entire day gaming together? I gotta say, I'm doing pretty good.
+	Barnaby: You play a mean game of Tetris.
+	MC: Thanks, it's something I pride myself on. You know\: work hard, play hard.
+	Barnaby: Whoa.
+Barnaby: {Player.name}, did you ever have a tough time in college?
+- Yes
+	MC: Yes I did, but I stuck with it. I met new people, I learned a lot ,and afterwards I got my degree in fish criminology.
+	Barnaby: Oh wow! That's amazing.
+- No
+	MC: nope, did it all perfectly, it all came easy,
+	Barnaby: Oh.
+Barnaby: But at least you must have had some interesting cases that you solved.
+MC: Oh, let me tell you...
+set {RomancePoints.Barnaby} += 2
+leave --All--
+return

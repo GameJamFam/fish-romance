@@ -1,0 +1,18 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Vent.ogg" fade="0.0" volume="0.0" loop="false"]
+join Barnaby 1
+Barnaby: Whoa, oh hey there {Player.name}! I didn't see you heading over.
+Barnaby: I was just coming to the vent here to take a look at what happened.
+MC: Yeah, pretty wild, right?
+Barnaby: Yeah.
+Barnaby: What's amazing is, who would even be able to lift a thing like that? You would need some kind of equipment, there's no way any fish would be able to lift a boulder that huge.
+Barnaby: Also, the composition of this concrete\: it's unusually quick setting.. you'd need some kind
+of, I want to say a degree in chemical engineering to even get something like this to work.
+MC: Barnaby, you think you could analyze what this concrete is made of see if you can get any clues from it?
+Barnaby: Gosh, yeah of course {Player.name}! I'd love to help out. I've been using my graphics card for just playing fortnite and generating crypto. But yeah, I'd love to run some models on it to make something useful!
+MC: I love to hear that Barnaby.
+set {RomancePoints.Barnaby} += 1
+Barnaby: Thank you so much!
+leave --All--
+[music fade="0.0" volume="0.0"]
+return

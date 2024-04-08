@@ -1,2 +1,26 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Vent.ogg" fade="0.0" volume="0.0" loop="false"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
+You decide to head down to the vent in order to investigate the scene of the crime further.
+When you arrive, only one person is present\: an official-looking eel in a business suit stands and surveys the mess. You walk up beside her.
+join Meelody 1
+MC: Good morning, my name is {Player.name}. Who might you be?
+Meelody: my name is Meelody, I'm the attorney representing the vents ownership.
+MC: Perhaps you could tell me a bit more about when all what went on here.
+Meelody: From the company perspective, it appears to be some form of attack on the business.
+Meelody: You can see that large rock there; it was strategically pushed then cemented into place; blocking off access to the geothermic vent.
+MC: I see.
+MC: Would it be alright if I took a further look around the grounds?
+Meelody: By all means, though it's unlikely all you'll find anything that isn't public knowledge already. Information travels quickly, so long as you know who collects it.
+MC: And would that be you collecting it?
+Meelody: No one wants to talk to a lawyer if they can avoid it, just like nobody wants to talk to a cop if they don't have to.
+Meelody: Now if you want answers, you might have to talk to someone who people share secrets with.
+MC: Secrets, you say.
+Meelody: Something of that nature.
+MC: Seems to me you you might know more than you're letting on.
+Meelody: Like I said, even the hottest gossiper doesn't share with a lawyer unless their case depends on it.
+MC: I see. Thank you. well I'll be looking around then.
+Meelody: Do take care, {Player.name}.
+leave --All--
+[music fade="0.0" volume="0.0"]
 return
-

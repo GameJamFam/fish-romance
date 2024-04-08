@@ -1,17 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://12sro728l56v"]
+[gd_scene load_steps=14 format=3 uid="uid://12sro728l56v"]
 
 [ext_resource type="Script" path="res://Scenes/MainMenu/main_menu.gd" id="1_f7ccb"]
 [ext_resource type="PackedScene" uid="uid://burlwaj0sd6w1" path="res://Scenes/MainGame/MainScene.tscn" id="2_nwkje"]
 [ext_resource type="PackedScene" uid="uid://b5f7i1bau07wg" path="res://Scenes/MainMenu/Background.tscn" id="2_p1vjr"]
-[ext_resource type="PackedScene" uid="uid://d6g7sfn1tpge" path="res://Scenes/Gameboytheme/gameboy.tscn" id="3_co5or"]
+[ext_resource type="Texture2D" uid="uid://b6p14clr3hqa2" path="res://assets/Title Screen/Piscine_Logo_Vector-big.png" id="4_hxtsl"]
 [ext_resource type="Theme" uid="uid://dtsvg2rsksn1r" path="res://Scenes/Gameboytheme/ui_theme.tres" id="4_qb4dw"]
 [ext_resource type="Texture2D" uid="uid://1r6hgyobbs57" path="res://assets/Title Screen/reset.png" id="5_ji1n3"]
 [ext_resource type="AudioStream" uid="uid://df438uwxucfkf" path="res://assets/Tunes & Bops/SFX/UI/Button-Hover.ogg" id="6_isv1b"]
 [ext_resource type="AudioStream" uid="uid://bgri6jn6lq887" path="res://assets/Tunes & Bops/Romanced.ogg" id="7_0ldjf"]
 [ext_resource type="AudioStream" uid="uid://da22erwc4if7f" path="res://assets/Tunes & Bops/SFX/UI/Button-Click.ogg" id="7_pdq6g"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_rac6e"]
-font_size = 86
 
 [sub_resource type="InputEventKey" id="InputEventKey_xcg5l"]
 device = -1
@@ -30,22 +27,28 @@ events = [SubResource("InputEventKey_777m4")]
 [node name="MainMenuElements" type="Node" node_paths=PackedStringArray("ResetButton", "ResetModal")]
 script = ExtResource("1_f7ccb")
 GAME = ExtResource("2_nwkje")
-ResetButton = NodePath("CanvasLayer/Main/VBoxContainer/MarginContainer")
-ResetModal = NodePath("CanvasLayer/Main/ResetConfirmModal")
+ResetButton = NodePath("CanvasLayer/Control/Main/VBoxContainer/MarginContainer")
+ResetModal = NodePath("CanvasLayer/Control/Main/ResetConfirmModal")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ScalesHalftoneBig5" parent="CanvasLayer" instance=ExtResource("2_p1vjr")]
 
-[node name="Main" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 280.0
+offset_top = 2.0
+offset_right = 5751.0
+offset_bottom = 3002.0
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("4_hxtsl")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Main"]
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Main" type="Control" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,80 +56,93 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Main/VBoxContainer"]
+[node name="VBoxContainer" type="Control" parent="CanvasLayer/Control/Main"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/Main/VBoxContainer"]
 custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
+offset_left = 7.0
+offset_top = 212.0
+offset_right = 1159.0
+offset_bottom = 712.0
 theme = ExtResource("4_qb4dw")
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Main/VBoxContainer/CenterContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer"]
 custom_minimum_size = Vector2(512, 256)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="Title" type="Label" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 32
-text = "Piscine"
-label_settings = SubResource("LabelSettings_rac6e")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="PlayButton" type="Button" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="PlayButton" type="Button" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Play"
 
-[node name="ControlsButton" type="Button" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="ControlsButton" type="Button" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Controls"
 
-[node name="CreditsButton" type="Button" parent="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="CreditsButton" type="Button" parent="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Credits"
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Main/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Main/VBoxContainer"]
 layout_mode = 2
+offset_left = 1065.0
+offset_top = 558.0
+offset_right = 1138.0
+offset_bottom = 631.0
 size_flags_horizontal = 8
 
-[node name="Button" type="Button" parent="CanvasLayer/Main/VBoxContainer/MarginContainer"]
+[node name="Button" type="Button" parent="CanvasLayer/Control/Main/VBoxContainer/MarginContainer"]
 layout_mode = 2
 tooltip_text = "Reset Game"
 icon = ExtResource("5_ji1n3")
 
-[node name="ResetConfirmModal" type="Panel" parent="CanvasLayer/Main"]
+[node name="ResetConfirmModal" type="Panel" parent="CanvasLayer/Control/Main"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 218.0
-offset_top = 67.0
-offset_right = -218.0
-offset_bottom = -67.0
+offset_left = 565.0
+offset_top = 314.0
+offset_right = 525.0
+offset_bottom = 274.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Main/ResetConfirmModal"]
-layout_mode = 2
-offset_left = 358.0
-offset_top = 376.0
-offset_right = 358.0
-offset_bottom = 376.0
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/Main/ResetConfirmModal"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -242.0
+offset_top = -315.0
+offset_right = 258.0
+offset_bottom = 335.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.862745, 0.427451, 0.596078, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Main/ResetConfirmModal"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Main/ResetConfirmModal"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -134,18 +150,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_qb4dw")
 theme_override_font_sizes/font_size = 86
 text = "Reset Save"
 horizontal_alignment = 1
 
-[node name="Panel" type="Panel" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer"]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer"]
+[node name="Label2" type="Label" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_qb4dw")
 theme_override_font_sizes/font_size = 56
@@ -153,39 +169,43 @@ text = "Hold it! Are you sure you want to reset your save? This can't be undone!
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Panel2" type="Panel" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer"]
+[node name="Panel2" type="Panel" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 
-[node name="HSplitContainer" type="HSplitContainer" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer"]
+[node name="HSplitContainer" type="HSplitContainer" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer"]
 custom_minimum_size = Vector2(0, 90.5)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Button" type="Button" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer/HSplitContainer"]
+[node name="Button" type="Button" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer/HSplitContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme = ExtResource("4_qb4dw")
 shortcut = SubResource("Shortcut_ayegi")
 text = "Absolutely"
 
-[node name="Button2" type="Button" parent="CanvasLayer/Main/ResetConfirmModal/VBoxContainer/HSplitContainer"]
+[node name="Button2" type="Button" parent="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer/HSplitContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme = ExtResource("4_qb4dw")
 shortcut = SubResource("Shortcut_8uek1")
 text = "Nope"
 
-[node name="Controls" type="Control" parent="CanvasLayer"]
+[node name="Controls" type="Control" parent="CanvasLayer/Control"]
 visible = false
-layout_mode = 3
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 552.0
+offset_top = 456.0
+offset_right = 552.0
+offset_bottom = 456.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Controls"]
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/Controls"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -194,26 +214,26 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("4_qb4dw")
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Controls/CenterContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/Controls/CenterContainer"]
 custom_minimum_size = Vector2(512, 256)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Controls/CenterContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
-[node name="Title" type="Label" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -221,7 +241,7 @@ text = "Controls"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Title2" type="Label" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="Title2" type="Label" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
@@ -229,56 +249,64 @@ text = "Minigame Controls:
  - Left: A | Left Arrow
  - Right: D | Right Arrow"
 
-[node name="Title3" type="Label" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="Title3" type="Label" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Regular game controls:
 Use the mouse to interact with the dialogue options."
 autowrap_mode = 2
 
-[node name="BackButton" type="Button" parent="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Back"
 
-[node name="Credits" type="Control" parent="CanvasLayer"]
+[node name="Credits" type="Control" parent="CanvasLayer/Control"]
 visible = false
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("4_qb4dw")
-
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Credits"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 563.0
+offset_top = 222.0
+offset_right = 563.0
+offset_bottom = 222.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_qb4dw")
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/Credits"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -205.0
+offset_right = 340.0
+offset_bottom = 255.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Credits/CenterContainer"]
-custom_minimum_size = Vector2(720, 450)
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/Credits/CenterContainer"]
+custom_minimum_size = Vector2(720, 500)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Credits/CenterContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
 
-[node name="Title" type="Label" parent="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 32
@@ -286,7 +314,7 @@ text = "Created By"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 bbcode_enabled = true
 text = "The premiere fish romance game, written by Jacques the Shrimp. Some work was outsourced to the GameJamFam.
@@ -298,13 +326,10 @@ All aspects of this work have been a collaborative effort between the entire Gam
 The source code for this project may be found on [url=\"https://github.com/gamejamfam/fish-romance\"]Github[/url]."
 fit_content = true
 
-[node name="BackButton" type="Button" parent="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
+[node name="BackButton" type="Button" parent="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Back"
-
-[node name="ColorRect" parent="CanvasLayer" instance=ExtResource("3_co5or")]
-mouse_filter = 2
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_0ldjf")
@@ -316,22 +341,22 @@ stream = ExtResource("6_isv1b")
 [node name="ClickFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_pdq6g")
 
-[connection signal="button_down" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="click_button"]
-[connection signal="mouse_entered" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="hover_button"]
-[connection signal="pressed" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="start_game"]
-[connection signal="button_down" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="click_button"]
-[connection signal="mouse_entered" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="hover_button"]
-[connection signal="pressed" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="show_controls"]
-[connection signal="button_down" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="click_button"]
-[connection signal="mouse_entered" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="hover_button"]
-[connection signal="pressed" from="CanvasLayer/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="show_credits"]
-[connection signal="pressed" from="CanvasLayer/Main/VBoxContainer/MarginContainer/Button" to="." method="show_reset_modal"]
-[connection signal="pressed" from="CanvasLayer/Main/ResetConfirmModal/VBoxContainer/HSplitContainer/Button" to="." method="reset_save"]
-[connection signal="pressed" from="CanvasLayer/Main/ResetConfirmModal/VBoxContainer/HSplitContainer/Button2" to="." method="hide_reset_modal"]
-[connection signal="button_down" from="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="click_button"]
-[connection signal="mouse_entered" from="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="hover_button"]
-[connection signal="pressed" from="CanvasLayer/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="back_to_main"]
-[connection signal="meta_clicked" from="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/RichTextLabel" to="." method="link_clicked"]
-[connection signal="button_down" from="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="click_button"]
-[connection signal="mouse_entered" from="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="hover_button"]
-[connection signal="pressed" from="CanvasLayer/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="back_to_main"]
+[connection signal="button_down" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="click_button"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="hover_button"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="start_game"]
+[connection signal="button_down" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="click_button"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="hover_button"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ControlsButton" to="." method="show_controls"]
+[connection signal="button_down" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="click_button"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="hover_button"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/VBoxContainer/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/CreditsButton" to="." method="show_credits"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/VBoxContainer/MarginContainer/Button" to="." method="show_reset_modal"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer/HSplitContainer/Button" to="." method="reset_save"]
+[connection signal="pressed" from="CanvasLayer/Control/Main/ResetConfirmModal/VBoxContainer/HSplitContainer/Button2" to="." method="hide_reset_modal"]
+[connection signal="button_down" from="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="click_button"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="hover_button"]
+[connection signal="pressed" from="CanvasLayer/Control/Controls/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="back_to_main"]
+[connection signal="meta_clicked" from="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/RichTextLabel" to="." method="link_clicked"]
+[connection signal="button_down" from="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="click_button"]
+[connection signal="mouse_entered" from="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="hover_button"]
+[connection signal="pressed" from="CanvasLayer/Control/Credits/CenterContainer/PanelContainer/MarginContainer/ScrollContainer/VBoxContainer/BackButton" to="." method="back_to_main"]

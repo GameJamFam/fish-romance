@@ -1,0 +1,20 @@
+join Franklin 1
+Franklin: Hi {Player.name}, what's on the docket for today?
+MC: Well, you know Franklin, I thought I might spend the day here, with you.
+Franklin: Really? With me? Ah, shucks.
+Franklin: I mean, I know I'm the chief of police and all, but, you know, you've got a case tosolve out there, slugger.
+MC: I know Frank, but it's just, it's, the station is so warm and the outside is so cold, pluswe've got that great pool table in the break room.
+Franklin: Oh man, it is a pretty great pool table.
+Franklin: You know what's even better though?
+Franklin: I don't know if I should tell you about this necessarily, don't want to distract you or nothing.
+MC: No, please do tell me.
+Franklin: Well, it's a little dusty, but we've got a foosball table here as well.
+MC: No kidding.
+MC: You're telling me you've got a foosball table in the police station as well?
+Franklin: Yeah. Back when we had more people on the force, we would always have tournaments, but, well, it's just me these days.
+Franklin: It's a lonely job, but the hardest part is really just there's no one to play foosballagainst.
+MC: Franklin, what I'm suggesting may not be ethical, but I'd like to play you a foosball all daytoday.
+MC: Let's have a tournament of our own.
+Franklin: Wow, that sounds like a great idea! I'll stock up on the donuts.
+leave Franklin
+return

@@ -1,3 +1,14 @@
 [background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
 [music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
+You enter the bar from last night. A familiar looking barista walks up to the counter.
+join Romeo 
+Romeo: Hi there, what can I get you today?
+- Wasn't this a bar before?
+	Romeo scowls.
+	Romeo: During the daytime hours, we're a coffee shop. We sell coffee here.
+	MC: Duly noted.
+- Coffee, please.
+	Romeo: Here you go, fresh from the carafe.
+Looking around the place, there's only one customer inside: a lumpfish sits quietly near the window, enjoying an espresso doppio.
+MC: I'm currently investigating the vent incident with the 
 return

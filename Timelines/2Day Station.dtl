@@ -1,2 +1,16 @@
-return
+join Franklin 1
 
+Franklin: Hi {Player.name}. Make any progress on the case yet?
+MC: Not yet, Frank. I've been meeting up with some of the townsfolk, but they're a little reticent to come forward with details.
+Franklin: Ah, I hear ya. Me, I've been trying to make friends in this town for a long time, and I tell ya, the real secret is just spending time with people.
+MC: Thanks for the advice, Frank.
+MC: In that spirit, what are you up to today?
+Franklin: Oh, ya know. Paperwork. Filing. Other police duties.
+MC: So it's mostly a desk job then.
+Franklin: Oh, more or less. Sometimes I get up and go play pool. That's a nice change of pace.
+MC: Huh. Pool, you say.
+Franklin: Yeah, pool. Ever played it before? They have pool where you're from?
+MC: No, I've never played it before.
+Franklin: Oh, man. Well, we gotta try it right now.
+leave Franklin
+return

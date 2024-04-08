@@ -1,0 +1,31 @@
+if {2Day.SpokeBarnaby} == false:
+	jump 2Day Barnaby/
+	return
+[background arg="res://assets/Backgrounds/Barnaby’s Dorm.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Water Ambience Basic 1.ogg" fade="0.0" volume="0.0"]
+join Barnaby 1
+join Smitty 2
+Smitty: Dude, that detective is like, back again.
+Barnaby: He's not just a detective, he's my, well, friend?
+MC: I think so.
+Barnaby: Oh boy.
+Smitty: So like, have you gotten any closer to cracking that old chestnut there?
+MC: I've got some leads in my pocket, I think.
+MC: Well, certainly by tomorrow I should be able to close the case.
+Smitty: Dude, that's like, barely following due process.
+Smitty: I mean, don't get me wrong, but, don't you gotta like, organize evidence, otherwise you'rejust judge, jury, and executioner,
+MC: Please, I'm just judge and jury.
+Smitty: Okay, dude, kind of whack if you ask me.
+Barnaby: Yeah, well, we didn't get out of here, Smitty.
+MC: Go smoke some seaweed.
+Barnaby gives you a high-five.
+leave Smitty [animation="Bounce Out"]
+Barnaby: So now that we're alone, I, well, I've really grown to like you over these past few days.
+Barnaby: It's amazing what a short time can do, but, already, I feel like I know you so well.
+MC: I feel the same way, but I feel the same way about you.
+Barnaby: So...
+Barnaby: Want to play some Tetris?
+MC: Sure.
+set {RomancePoints.Barnaby} += 2
+leave --All--
+return

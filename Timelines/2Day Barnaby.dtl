@@ -1,2 +1,41 @@
+[background arg="res://assets/Backgrounds/Barnaby’s Dorm.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Water Ambience Basic 1.ogg" fade="0.0" volume="0.0"]
+You enter the residence hall. The stench of a thousand teenage boys who have yet to discover showers hits you in the nose like a brick.
+Eyes watering, you make your way towards the room. Barnaby is inside, along with his roommate.
+join Barnaby (Neutral) 1
+join Smitty 2
+Barnaby: Hi there, {Player.name}! This is my roommate, Smitty.
+Smitty: Word.
+Barnaby: So I'm not that great with, you know, making friends and all, but well,
+Barnaby: Smitty actually just in recently enrolled me in his frat!
+Smitty: Yeah.
+Barnaby: Yeah it's pretty cool. It's, you know, it's a good way to meet people I think.
+Barnaby: Anyway, Smitty's a lot more sociable than I am so I was --
+Barnaby: Smitty, for some context MC here is trying to get to the bottom of who did who did that thing at the vent.
+Smitty: Oh yeah ,that thing at the vent. Man, that's real bad. Real bad, man.
+MC: I see. Tell me more.
+MC: Have you heard anything about what happened? You wouldn't happen to know anything, would you?
+Smitty: Man, what is knowledge? All I'm saying is\:
+Smitty: Real bad for the town, real badman. Yeah, real bad indeed.
+MC: ...
+MC: At any rate. Thank you, Smitty, for all your help.
+Smitty: No problem, I'll see you around dude.
+leave Smitty
+Barnaby: Ah, so this is my dorm room.
+MC: I like your gaming setup.
+Barnaby: Thank you! Smitty, he's a bit of a character, but otherwise he's harmless.
+MC: You don't think he's addicted to seaweed, do you?
+Barnaby: Smitty? no he's on the up-and-up. At least, I think so.
+Barnaby: I don't know. That the rush process was pretty intense, but I don't think Smitty would do anything like that.
+MC: what'd you have to do for your rush?
+Barnaby: Oh, you know. just run around town and egg the other fraternities house. Harmless pranks like that.
+Barnaby: Oh, I shouldn't have admitted that, you're...
+MC: No no, it's fine I can look the other way. As long as no one's made any complaints, at least.
+Barnaby: Oh, thanks!
+MC: So what did you do specifically?
+Barnaby: Oh yeah, pranks like that. Nothing else. Anyway, you want to play some games?
+MC: Sure.
+set {2Day.SpokeBarnaby} = true
+set {RomancePoints.Barnaby} += 1
+leave Barnaby
 return
-

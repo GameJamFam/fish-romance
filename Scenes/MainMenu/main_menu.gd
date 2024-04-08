@@ -3,9 +3,9 @@ extends Node
 @export var ResetButton: MarginContainer
 @export var ResetModal: Panel
 
-@onready var main = $CanvasLayer/Main
-@onready var control = $CanvasLayer/Controls
-@onready var credits = $CanvasLayer/Credits
+@onready var main = $CanvasLayer/Control/Main
+@onready var control = $CanvasLayer/Control/Controls
+@onready var credits = $CanvasLayer/Control/Credits
 
 func _ready():
 	back_to_main()
@@ -43,10 +43,10 @@ func reset_save():
 	hide_reset_modal()
 
 func show_reset_modal():
-	$CanvasLayer/Main/VBoxContainer.visible = false
+	$CanvasLayer/Control/Main/VBoxContainer.visible = false
 	ResetModal.visible = true
 
 func hide_reset_modal():
-	$CanvasLayer/Main/VBoxContainer.visible = true
+	$CanvasLayer/Control/Main/VBoxContainer.visible = true
 	ResetModal.visible = false
 	back_to_main()

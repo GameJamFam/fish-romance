@@ -1,0 +1,30 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Vent.ogg" fade="0.0" volume="0.0" loop="false"]
+You decide to head back to the geothermic vent. There, you meet two people having a heated argument.
+join Jacques (Mad) 1
+join Smitty 3
+Smitty: No bro, I'm telling you, Hatsune Miku does not hold a candle to Gumi.
+Smitty: Her voice banks allowed her to sing in both English and Japanese.
+Smitty: I'm telling you, dude, the localization potential is through the gosh-darn charts.
+Jacques: And I'm telling you, Hatsune Miku is God's gift to this green earth.
+Jacques: Vocaloids would not be a worldwide phenomenon without the trailblazing work of Hatsune Miku.
+Jacques: She is an artist. She is an instrumentalist. She is an instrument.
+Jacques: No one can top Hatsune Miku.
+Smitty: No bro, if you look into the lore, Gumi has a much more developed character.
+Smitty: The story potentials and possible storylines that can evolve.
+Jacques: Hatsune Miku is an icon; her character has so much breadth it's not even a comparison.
+Smitty: Sure, you want to talk breadth? Hatsune Miku all the way.
+Smitty: If you want actual depth to your lyrics and your story and your voice, you go with Gumi.
+Jacques: Say one more gosh-darn thing about Hatsune Miku that is not praise, and I am going to throttle you with all ten of my arms, especially my two beefiest.
+Smitty: Oh hey {Player.name}, we were just talking about Vocaloids. Do you have a favorite Vocaloid?
+- Hatsune Miku.
+	Jacques: Thank you. Finally, someone who understands art.
+	set {RomancePoints.Jacques} += 2
+- Gumi.
+	leave Jacques [animation="Instant In Or Out" length="0" wait="true"]
+	join Jacques (Far Away) 1 [animation="Instant In Or Out" length="0"]
+	Smitty: Thank you. Finally, someone who understands art.
+	set {RomancePoints.Jacques} -= 2
+leave --All--
+[music fade="0.0" volume="0.0"]
+return

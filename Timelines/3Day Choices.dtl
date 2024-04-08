@@ -1,26 +1,25 @@
 [music path="res://assets/Tunes & Bops/Wayfall/BGM/ShrimpVillage.ogg" fade="0.0" volume="0.0"]
 [background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
-Where will you spend the night?
-set {AccessibleAreas.BarnabyHome} = true
-set {AccessibleAreas.EeliottHome} = false
-set {AccessibleAreas.JacquesHome} = true
+Another day. The water feels colder.
+You've got some mail waiting in your inbox.
+You have a letter from Barnaby. He'll be in the coffee shop if you'd like to meet up.
+if !{RomancePoints.EeliottKnowsYoureACop}:
+	set {AccessibleAreas.EeliottHome} = true
+	You received a letter from Eeliott.
+	Eeliott: Hey. You should stop by my studio today.
+You have a letter from Jacques. He'll be exercising near the vent today.
+Where will you spend the day?
 set {AccessibleAreas.Bar} = true
 set {AccessibleAreas.Vent} = true
 set {AccessibleAreas.Library} = false
-set {AccessibleAreas.Station} = false
+set {AccessibleAreas.Station} = true
 [music fade="2.0" volume="0.0"]
 - Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
 	jump 
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
-	jump 
-- Library [if {AccessibleAreas.Library} == true][else="hide"]
-	jump 
+	jump 3Day Vent/
 - Police Station [if {AccessibleAreas.Station} == true][else="hide"]
-	jump 
-- Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
-	jump 
+	jump 3Day Station/
 - Eeliott's Arthaus [if {AccessibleAreas.EeliottHome} == true][else="hide"]
 	jump 
-- Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
-	jump 
-jump 3Day Choices/
+jump 3Night Choices/

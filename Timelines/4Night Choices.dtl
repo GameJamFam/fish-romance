@@ -1,9 +1,17 @@
 [music path="res://assets/Tunes & Bops/Wayfall/BGM/ShrimpVillage.ogg" fade="0.0" volume="0.0"]
 [background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
+You've got some mail from Franklin.
+Franklin: Get down to the coffee shop as soon as you can. There's been a situation.
+You also have some mail from Jacques.
+Jacques: Meet me out by the vent, I want to talk to you.
+You also have some mail from Eeliott.
+Eeliott: My latest piece is complete! Come check it out.
+Your last message comes from Barnaby.
+Barnaby: Hey! I thought it might be fun to hang out tonight. Let me know!
 Where will you spend the night?
 set {AccessibleAreas.BarnabyHome} = true
 set {AccessibleAreas.EeliottHome} = false
-set {AccessibleAreas.JacquesHome} = true
+set {AccessibleAreas.JacquesHome} = false
 set {AccessibleAreas.Bar} = true
 set {AccessibleAreas.Vent} = true
 set {AccessibleAreas.Library} = false
@@ -13,14 +21,8 @@ set {AccessibleAreas.Station} = false
 	jump 
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 
-- Library [if {AccessibleAreas.Library} == true][else="hide"]
-	jump 
-- Police Station [if {AccessibleAreas.Station} == true][else="hide"]
-	jump 
-- Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
-	jump 
 - Eeliott's Arthaus [if {AccessibleAreas.EeliottHome} == true][else="hide"]
 	jump 
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
-	jump 
-jump 3Day Choices/
+	jump 4Night Barnaby/
+jump 2Night Choices/

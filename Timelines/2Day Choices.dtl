@@ -20,6 +20,7 @@ set {AccessibleAreas.Bar} = true
 set {AccessibleAreas.Vent} = true
 set {AccessibleAreas.Library} = false
 set {AccessibleAreas.Station} = true
+[music fade="2.0" volume="0.0"]
 - Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
 	jump 2Day Bar/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
@@ -34,5 +35,4 @@ set {AccessibleAreas.Station} = true
 	jump 2Day Eeliott/
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
 	jump 2Day Barnaby/
-[music fade="2.0" volume="0.0"]
 jump 2Night Choices/

@@ -1,0 +1,39 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Vent.ogg" fade="0.0" volume="0.0" loop="false"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
+You head back to the vent and then in the night and happen to run into Eeliott and Hollandaise, who are both interested in exploring the vent further.
+join Hollandaise 1
+join Eeliott 3
+Hollandaise: Wow, pretty big rock that got glued in there.
+Eeliott: No kidding.
+Eeliott: You have to have some serious equipment to be able to move that and then hand some realintention to glue it in afterwards.
+MC: Who benefits from this though?
+Hollandaise: Why would anybody try to cut off power to the town?
+Eeliott: Everybody relies on it.
+Eeliott: I mean, tensions are growing higher every day.
+Eeliott: I don't know.
+Eeliott: We'd need an outside perspective. I suppose that's where you come in, you must be here to solve the case.
+MC: That's right.
+MC: I got roped into this.
+Eeliott: Do you get many sabotage cases like this where you're from.
+- Not too many.
+	Eeliott: Seems like you're from a nicer place than here then.
+	Eeliott: Thought I knew everybody here. Guess that isn't true.
+- Yeah, we get a couple.
+	Hollandaise: That must be the big city for you.
+	Eeliott: We get too many people close together.
+	Hollandaise: Eventually you'll find some that don't like each other.
+Eeliott: Things would be a lot simpler if people just got along.
+Eeliott: Surely there must be some way for us to work out our differences.
+Eeliott: I do think open communication would solve a lot more problems than people think it's worth.
+Eeliott: They don't go for it because it's more difficult than just staying siloed up by yourself, with only the people you know.
+Eeliott: Even if it would be more difficult, everyone would benefit from a healthy outside perspective.
+Eeliott: It lets you see yourself more clearly.
+MC: Interesting. Take a look at this boulder.
+MC: It's a little faded, but there's a bunch of holes here.
+MC: Looks like ten spots all next to each other.
+Eeliott: Odd.
+set {RomancePoints.Eeliott} += 1
+leave --All--
+[music fade="0.0" volume="0.0"]
+return

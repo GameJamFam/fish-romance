@@ -7,17 +7,18 @@ uniform sampler2D screen_tex_frg_5 : hint_screen_texture;
 // TurnGameBoyPalette
 vec3 _gameboyPaletteFunc(vec3 _col_gbp0, float _gamma_gbp0){
 	_col_gbp0 = pow(_col_gbp0, vec3(_gamma_gbp0));
-	float _gray_col_gbp0 = 0.21 * _col_gbp0.r + 0.71 * _col_gbp0.g + 0.07 * _col_gbp0.b;
+	// 0.83, 0.69, 0.85
+	float _gray_col_gbp0 = 0.83 * _col_gbp0.r + 0.69 * _col_gbp0.g + 0.85 * _col_gbp0.b;
 	vec3 _res_col_gbp0 = vec3(0.0);
 	
 	if      (_gray_col_gbp0 <= 1.0/4.0)
-		_res_col_gbp0 = vec3(0.063, 0.247, 0.063);
+		_res_col_gbp0 = vec3(0.83, 0.69, 0.85);
 	else if (_gray_col_gbp0 <= 2.0/4.0)
-		_res_col_gbp0 = vec3(0.188, 0.392, 0.188);
+		_res_col_gbp0 = vec3(0.72, 0.58, 0.74);
 	else if (_gray_col_gbp0 <= 3.0/4.0)
-		_res_col_gbp0 = vec3(0.549, 0.667, 0.078);
+		_res_col_gbp0 = vec3(0.62, 0.48, 0.64);
 	else if (_gray_col_gbp0 <= 4.0/4.0)
-		_res_col_gbp0 = vec3(0.612, 0.725, 0.086);
+		_res_col_gbp0 = vec3(0.51, 0.38, 0.53);
 	
 	return _res_col_gbp0;
 }
