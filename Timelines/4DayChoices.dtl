@@ -18,4 +18,4 @@ set {AccessibleAreas.Station} = true
 	jump 4Day Barnaby/
 - Police Station [if {AccessibleAreas.Station} == true][else="hide"]
 	jump 4Day Station/
-jump 2Night Choices/
+jump 4Night Choices/

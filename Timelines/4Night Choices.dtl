@@ -25,4 +25,4 @@ set {AccessibleAreas.Station} = false
 	jump 
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
 	jump 4Night Barnaby/
-jump 2Night Choices/
+jump Day 5/
