@@ -11,11 +11,12 @@ set {AccessibleAreas.Library} = true
 set {AccessibleAreas.Station} = true
 [music fade="2.0" volume="0.0"]
 - Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
-	jump 
+	jump 4Day Bar/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 4Day Vent/
 - Library [if {AccessibleAreas.Library} == true][else="hide"]
 	jump 4Day Barnaby/
 - Police Station [if {AccessibleAreas.Station} == true][else="hide"]
 	jump 4Day Station/
+[save slot="Test"]
 jump 4Night Choices/

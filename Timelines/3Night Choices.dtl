@@ -10,7 +10,10 @@ set {AccessibleAreas.Library} = false
 set {AccessibleAreas.Station} = false
 [music fade="2.0" volume="0.0"]
 - Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
-	jump 
+	jump 3Day Coffee/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 3Night Vent/
+- Police Station
+	jump 3Day Station/
+[save slot="Test"]
 jump 4DayChoices/

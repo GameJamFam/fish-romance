@@ -36,4 +36,5 @@ Jacques: I should know, if I had all the time in the world I'd make sure every p
 MC: Good to know. It was nice to meet you, Jacques.
 set {1Night.SpokeJacques} = true
 leave Jacques
+[save slot="Test"]
 return

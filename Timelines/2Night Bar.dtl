@@ -1,0 +1,90 @@
+[background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
+You head over the bar to see what other patrons are present.
+join Charlene 1
+join Meelody 2
+join Smitty 3
+Charlene: Another round for you too?
+Meelody: Why not?
+leave Charlene
+Meelody: Ah, a new face in town. Come join us.
+Smitty: Bro, good to see you. Come on, hop in, pop a squat. We're just having a quick convo.
+MC: Good to meet you both.
+MC: My name is {Player.name}.
+MC: Bro, I already knew that.
+MC: You're quite popular.
+if {2Day.MetMeelody} == false:
+	Meelody: Well, I didn't at least. It's good to meet you.
+	Meelody: My name is Meelody.
+	Meelody: This is Smitty.
+	MC: Charmed.
+join Charlene 1
+Charlene: What are you up to tonight?
+- Beer
+	set {2Night.Drink} = "beer"
+	MC: One {2Night.Drink}, please.
+- Whiskey
+	set {2Night.Drink} = "whiskey"
+	MC: One {2Night.Drink}, please.
+- Martini
+	set {2Night.Drink} = "martini"
+	MC: One {1Night.Drink}, please.
+- Wine
+	MC: I'll try the wine.
+	if {1Night.Drink} == "wine":
+		Charlene: Sorry, that was the only bottle you had last night.
+		Charlene: I can get some old juice, at least.
+		set {2Night.Drink} = "juice"
+	else:
+		Coming right up.
+		set {2Night.Drink} = "wine"
+if {2Night.Drink} == "wine":
+	Charlene: Huh. You must have a sophisticated palate.
+else:
+	Charlene: One fish {1Night.Drink}, coming up.
+leave Charlene
+Smitty: So, got a question for you, bro.
+Meelody: Oh boy, here we go. Don't think too deeply about this one. When Smitty's had two drinks, he likes to pose philosophical questions.
+Smitty: No, no, come on.
+Smitty: Listen, this one's a head scratcher, but it's not a true head scratcher, bro.
+Smitty: Let me ask you this.
+Smitty: Do you think the true nature of fish is mostly good or mostly evil?
+- Mostly good.
+- Mostly evil.
+Smitty: What an answer, bro.
+Meelody: Classic mistake. You're in for a Smitty answer.
+Meelody: He's always looking for something in the middle.
+Smitty: Too true, Meelody.
+Smitty: The true nature of a fish can't be defined as only one or only another, bro.
+Smitty: It's an ever-shifting presence, much like the water around us.
+Smitty: Water isn't always hot. Water isn't always cold.
+Smitty: It's all about the interactions, bro.
+Smitty: You can't, like, put a fish in a box and mail that box, sign, seal, deliver.
+Smitty: The fish keeps on living inside the box, bro.
+Smitty: Friggin, think about it.
+Meelody: Now, that makes absolutely no sense.
+MC: Agreed.
+Smitty: Bro, if that doesn't make sense, you haven't had enough drinks.
+Smitty: You need to sit down and, like, think about life, bro.
+MC: Mmm. You must be a philosopher.
+Smitty: I tell you, bro, people get so stuck in their ways, like they dig a trench for their minds and just walk and walk and walk.
+Smitty: But they're just walking in a circle, bro.
+Smitty: It's a circular mind trench.
+MC: What?
+Smitty: You get it, man.
+Smitty: People just need to pop their heads up once in a while, take a look around, and see the world.
+Smitty: It's that simple.
+MC: And that'll fix everything?
+Smitty: No, it's not going to fix everything, but it's a perspective, man.
+Smitty: You need to be able to look at things from a different point of view.
+Smitty: That's what I'm saying, bro.
+Smitty: Anyway, I need to go. Think over by a window for a little bit. There's a really interesting piece of whale fall happening tonight.
+leave Smitty
+Meelody: I see you've made the pleasure of Smitty's acquaintance.
+Meelody: He's usually about like this, but the really interesting thing is when you get him between two and three drinks, he starts making a lot of sense.
+Meelody: Zero to two drinks, he's an incoherent mess. Just nonsense.
+Meelody: Then three and above, he just stops talking, he just listens.
+MC: ...
+The night passes with idle conversation.
+leave --All-- 
+return

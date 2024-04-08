@@ -18,11 +18,12 @@ set {AccessibleAreas.Library} = false
 set {AccessibleAreas.Station} = false
 [music fade="2.0" volume="0.0"]
 - Coffee Shop [if {AccessibleAreas.Bar} == true][else="hide"]
-	jump 
+	jump 4Night Bar/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
-	jump 
+	jump 4Night Vent/
 - Eeliott's Arthaus [if {AccessibleAreas.EeliottHome} == true][else="hide"]
-	jump 
+	jump 4Night Eeliott/
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
 	jump 4Night Barnaby/
+[save slot="Test"]
 jump Day 5/

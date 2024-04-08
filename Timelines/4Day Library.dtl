@@ -1,0 +1,26 @@
+[background arg="res://assets/Backgrounds/Library.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Library.ogg" fade="0.0" volume="0.0"]
+join Barnaby 1
+Barnaby: Ah, {Player.name}! I didn't think you'd come. I'm glad you got my note, though.
+MC: Of course, Barnaby.
+MC: What is it you wanted to talk to me about?
+Barnaby: I'm just glad that, well.
+Barnaby: Honestly, with all that's been going on,I feel like I've gotten to know you really well over the last few days.
+Barnaby: And, well, I just wanted to say that I'm glad I got to meet you,and, well, this is my private space. This is where I come to relax and unwind.
+MC: You spend your time at a library?
+Barnaby: I do.
+Barnaby: It's nice and quiet.
+Barnaby: You're surrounded by knowledge, and nobody tries to stop you from reading.
+MC: I can see why you'd like it, then.
+Barnaby: Yeah.
+You can see in the pile of books next to Barnaby. A few entries catch your eye: How to Talk to Cops,
+How to Talk to Oeople You Like, How To Talk.
+Barnaby: I've been trying to practice my conversational skills a little more. Branch out, you know, try new things.
+MC: Good for you.
+Barnaby: Yeah, I'll be honest.
+Barnaby: Even after joining a fraternity, I'm still feeling a little directionless in life. I just, I don't know what I want, and, you know. Well, they're at least outside of...
+His voice trails him off.
+Barnaby: And I thought it might be good for us to research more about what in the natural world might have caused vent.
+Barnaby: If you'd like to join me, of course.
+leave --All-- 
+return

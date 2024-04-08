@@ -20,4 +20,5 @@ MC: Take care, Barnaby.
 set {1Night.SpokeBarnaby} = true
 set {RomancePoints.Barnaby} += 1
 leave Barnaby
+[save slot="Test"]
 return

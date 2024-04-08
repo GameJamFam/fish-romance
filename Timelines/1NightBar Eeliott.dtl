@@ -36,4 +36,5 @@ MC: Hi there, my name's {Player.name}.
 	MC: Good to meet you, Eeliott.
 set {1Night.SpokeEeliott} = true
 leave Eeliott
+[save slot="Test"]
 return

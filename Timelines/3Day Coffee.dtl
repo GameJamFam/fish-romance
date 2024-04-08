@@ -1,0 +1,17 @@
+[background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
+You head over to the coffee shop.
+join Barnaby 1
+Inside, Barnaby weaves you down.
+Barnaby: Oh, hi there, {Player.name}. How's it going?
+MC: I'm doing all right. You said you wanted to see me.
+Barnaby: Yes. So, well, a couple things I suppose.
+Barnaby: I was wondering if you and I could...
+MC: Yes?
+Barnaby: Talk more about what you learned in your criminology degree.
+Barnaby: We don't have nearly the resources here, our only cop is Franklin and he's not much for talking.
+MC: Sure thing.
+You whittle the hours away with Barnaby.
+set {RomancePoints.Barnaby} += 2
+leave --All-- 
+return

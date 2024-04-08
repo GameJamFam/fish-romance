@@ -1,7 +1,7 @@
 [background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
 [music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
 You enter the bar from last night. A familiar looking barista walks up to the counter.
-join Romeo 
+join Romeo 1
 Romeo: Hi there, what can I get you today?
 - Wasn't this a bar before?
 	Romeo scowls.
@@ -9,6 +9,43 @@ Romeo: Hi there, what can I get you today?
 	MC: Duly noted.
 - Coffee, please.
 	Romeo: Here you go, fresh from the carafe.
-Looking around the place, there's only one customer inside: a lumpfish sits quietly near the window, enjoying an espresso doppio.
-MC: I'm currently investigating the vent incident with the 
+Looking around the place, there's only one customer inside\: a lumpfish sits quietly near the window, enjoying an espresso doppio.
+You call over to strike up a conversation.
+MC: Morning there.
+Hollandaise: Hello.
+join Hollandaise 3
+MC: My name is {Player.name}, what's yours?
+Hollandaise: My name is Hollandaise, I see you've met Romeo there.
+Hollandaise: Though, it seems you might have gotten off on the wrong foot to be honest.
+Hollandaise: He doesn't like people mentioning that there's another business that operates here.
+Romeo: All I'm saying is these are active business hours.
+Romeo: We don't have many rules here, but the one rule is that this is a coffee shop right now.
+MC: We're on the same page.
+Romeo: Coffee shop.
+Hollandaise: Sure thing, Romeo.
+Hollandaise: Anyway, he and his sister, Charlene, know this place.
+Hollandaise: They never can agree on just about anything.
+Hollandaise: But, so long as it's not the same time, they work together pretty well.
+MC: What do you do around town, Hollandaise?
+Hollandaise: I deliver the mail.
+Hollandaise: People like to write each other notes, and I'm happy to deliver them.
+Hollandaise: Keeps me busy. Keeps everyone else well informed.
+Hollandaise: I know you got some mail this morning at least.
+MC: Indeed I did. You wouldn't happen to read any of it, do you?
+Hollandaise: No, of course not. That is quite a few federal violations you're implying right there, I have no truck with that.
+Hollandaise: Now, if you like secrets, though, well...
+Hollandaise: Charlene's the one to talk to, of course. But Romeo has a couple.
+Romeo: Oh, I've got secrets all right.
+Romeo: Charlene doesn't wash any of the glasses after closing time.
+Romeo: She doesn't mop up the floor. She doesn't take out the trash.
+Romeo: Oh, wait, I'm sorry. You wanted secrets.
+Romeo: These are just obvious facts that I need to take care of because I take this seriously and I don't want a health code violation.
+Romeo: I'm the one who does all of the cleaning around here and she just rakes in the tips because booze is more popular than coffee, apparently.
+MC: And you're sure you work well together?
+Romeo: So long as it's not at the same time.
+MC: Interesting. Well, the day is waning.
+MC: Best be off to my business.
+Hollandaise: Have a good day, {Player.name}.
+MC: You as well.
+[save slot="Test"]
 return

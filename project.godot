@@ -47,19 +47,29 @@ directories/dtl_directory={
 "2Day Jacques": "res://Timelines/2Day Jacques.dtl",
 "2Day Station": "res://Timelines/2Day Station.dtl",
 "2Day Vent": "res://Timelines/2Day Vent.dtl",
+"2Night Bar": "res://Timelines/2Night Bar.dtl",
 "2Night Barnaby": "res://Timelines/2Night Barnaby.dtl",
 "2Night Choices": "res://Timelines/2Night Choices.dtl",
+"2Night Jacques": "res://Timelines/2Night Jacques.dtl",
 "2Night Vent": "res://Timelines/2Night Vent.dtl",
 "3Day Choices": "res://Timelines/3Day Choices.dtl",
+"3Day Coffee": "res://Timelines/3Day Coffee.dtl",
+"3Day Eeliott": "res://Timelines/3Day Eeliott.dtl",
 "3Day Station": "res://Timelines/3Day Station.dtl",
 "3Day Vent": "res://Timelines/3Day Vent.dtl",
+"3Night Bar": "res://Timelines/3Night Bar.dtl",
 "3Night Choices": "res://Timelines/3Night Choices.dtl",
 "3Night Vent": "res://Timelines/3Night Vent.dtl",
+"4Day Bar": "res://Timelines/4Day Bar.dtl",
+"4Day Library": "res://Timelines/4Day Library.dtl",
 "4Day Station": "res://Timelines/4Day Station.dtl",
 "4Day Vent": "res://Timelines/4Day Vent.dtl",
 "4DayChoices": "res://Timelines/4DayChoices.dtl",
+"4Night Bar": "res://Timelines/4Night Bar.dtl",
 "4Night Barnaby": "res://Timelines/4Day Barnaby.dtl",
 "4Night Choices": "res://Timelines/4Night Choices.dtl",
+"4Night Eeliott": "res://Timelines/4Night Eeliott.dtl",
+"4Night Vent": "res://Timelines/4Night Vent.dtl",
 "Day 5": "res://Timelines/Day 5.dtl"
 }
 glossary/default_case_sensitive=true
@@ -73,17 +83,25 @@ variables={
 "SpokeJacques": false
 },
 "2Day": {
+"MetMeelody": "",
 "SpokeBarnaby": false,
 "SpokeEeliott": false,
 "SpokeJacques": false,
 "SpokeNone": true
 },
-"2Night": {},
-"3Day": {},
+"2Night": {
+"Drink": ""
+},
+"3Day": {
+"HeardVocaloids": false
+},
 "3Night": {},
 "4Day": {},
 "4Night": {},
-"5Day": {},
+"5Day": {
+"CrimeChoice": "",
+"LoveChoice": ""
+},
 "5Night": {},
 "AccessibleAreas": {
 "Bar": false,

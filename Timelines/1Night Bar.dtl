@@ -40,4 +40,5 @@ set {1Night.Conversations} += 1
 if {1Night.Conversations} <= 1:
 	jump 1Night Conversations
 The night is getting late, and the bartender signals that it's closing time. You've got quite a few facts to sort out back at work...
+[save slot="Test"]
 jump 2Day Choices/

@@ -25,6 +25,7 @@ Smitty: Oh hey {Player.name}, we were just talking about Vocaloids. Do you have 
 	join Jacques (Far Away) 1 [animation="Instant In Or Out" length="0"]
 	Smitty: Thank you. Finally, someone who understands art.
 	set {RomancePoints.Jacques} -= 2
+set {3Day.HeardVocaloids} = true
 leave --All--
 [music fade="0.0" volume="0.0"]
 return

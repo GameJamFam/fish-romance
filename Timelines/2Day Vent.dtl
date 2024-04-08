@@ -21,6 +21,7 @@ MC: Seems to me you you might know more than you're letting on.
 Meelody: Like I said, even the hottest gossiper doesn't share with a lawyer unless their case depends on it.
 MC: I see. Thank you. well I'll be looking around then.
 Meelody: Do take care, {Player.name}.
+set {2Day.MetMeelody} = true
 leave --All--
 [music fade="0.0" volume="0.0"]
 return

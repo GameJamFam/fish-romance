@@ -1,0 +1,18 @@
+[background arg="res://assets/Backgrounds/Eeliott’s Studio.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
+join Eeliott 1
+join Hollandaise 2
+Eeliott: I'm telling you, Holly, the more I look at this thing, the less I think this rock rolled itself.
+Eeliott: Or at the very least, someone clearly pushed it.
+Eeliott: Look, you can even see chalk marks on here.
+Hollandaise: I don't know, Eeliott, that seems unlikely, especially since it's so heavy.
+Hollandaise: You'd have to get machinery up here. There's no other way.
+Eeliott: But how would you power it?
+Eeliott: You would almost need machinery hooked up to the vent itself in order to generate enough power to get this thing over the last hill.
+Hollandaise: Yeah, at least now your bioluminescent art piece can be truly appreciated now that most places are dark.
+Eeliott: Holly, I appreciate the looking on the brighter side of things, but come on now, that's too far.
+Hollandaise: I'm just saying.
+Hollandaise: You always wanted more eyes on your work, yeah?
+Hollandaise: Look at the bright side.
+leave --All--
+return

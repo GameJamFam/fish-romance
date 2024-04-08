@@ -1,0 +1,12 @@
+[background arg="res://assets/Backgrounds/Eeliott’s Studio.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
+join Eeliott 1
+Eeliott: {Player.name}, I'm so glad you're here, there's something I'd like to show you. 
+Eeliott: It's my bioluminescence piece, it's, I think it's finally ready, 
+MC: My god, it's me.
+Eeliott: Yeah, I'm so glad you're here to see it, like these past few days, with you coming around, it's really brought more attention to my art.
+Eeliott: I think it's made people more aware of our role coexisting in an ecosystem, and I can't thank you enough for that.
+MC: I really do appreciate it
+MC: Thank you, Eeliott, that really means a lot to me.
+leave --All--
+return

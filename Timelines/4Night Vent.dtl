@@ -1,0 +1,34 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/BGM/IsopodPod.ogg" fade="0.0" volume="0.0" loop="false"]
+join Jacques 1
+Jacques: Oh, hi {Player.name}.
+Jacques: I was just thinking about a conversation I had earlier with a friend. And, well, you're my
+friend too, {Player.name}.
+Jacques: I hope you don't mind me thinking that.
+Jacques: But, well, I got into a disagreement with a friend and I think I said some pretty hurtful things.
+Jacques: {Player.name}, what do you do when you want to patch up a relationship with somebody?
+- Apologize and listen.
+	Jacques: I suppose you're right.
+	Jacques: It's just that his convictions are so strongly held.
+	Jacques: It's so difficult for me because I too have very strongly held convictions.
+	Jacques: And if they're at odds with one another, it's just so difficult to get around that.
+	Jacques: But you're right.
+	Jacques: I should listen.
+	Jacques: I should save my first reaction, keep it inside my head, and come back with a more measured response.
+	Jacques: Thank you, {Player.name}.
+- Try and get them to see your point of view.
+	Jacques: If you can explain yourself, I suppose you're right, {Player.name}.
+	Jacques: If I can just explain myself in such a way that makes me sound calm and rational, then logically, they must agree with me.
+	Jacques: After all, if my strongly held convictions weren't correct, why would I have them?
+	Jacques: Thanks, {Player.name}.
+	Jacques: You make everything so obvious.
+- Is this about the Vocaloids?
+	Jacques: Yes, this is about the Vocaloids, but it's about more than that.
+	Jacques: We don't always see eye-to-eye.
+	Jacques: He loves the fifth generation of Vocaloids the best eye my heart is set for, the one and only.
+	Jacques: Still, though, I don't know anyone else who appreciates Vocaloids on as deep a level as me except for Smitty.
+	Jacques: And so, at the end of the day, I guess it's best just to make up and move on.
+	Jacques: Thank you, {Player.name}.
+leave --All--
+[music fade="0.0" volume="0.0"]
+return

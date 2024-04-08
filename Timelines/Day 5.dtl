@@ -1,0 +1,59 @@
+join Barnaby 1
+join Eeliott 2
+join Jacques 3
+join Franklin 4
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Water Ambience Basic 1.ogg" fade="0.0" volume="0.0"]
+[background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
+Franklin: Well main character This is it. Everybody's here, and I think we're out of time.
+Franklin: Who done it?
+MC: Chief, I know exactly who did it, and it was
+- Eeliott
+	set {5Day.CrimeChoice} = "Eeliott"
+	Franklin: Well good enough for me.
+	Eeliott: No wait, absolutely not!
+	Eeliott: That's ridiculous! Stop putting handcuffs on me!
+	Eeliott: Curse you {Player.name}! I'll never forgive you for this!
+	MC: Take him away chief.
+- Barnaby
+	set {5Day.CrimeChoice} = "Barnaby"
+	Franklin: Well good enough for me.
+	Barnaby: No wait, absolutely not!
+	Barnaby: That's ridiculous! Stop putting handcuffs on me!
+	Barnaby: Curse you {Player.name}! I'll never forgive you for this!
+	MC: Take him away chief.
+- Jacques
+	set {5Day.CrimeChoice} = "Jacques"
+	Franklin: Well good enough for me.
+	Jacques: No wait, absolutely not!
+	Jacques: That's ridiculous! Stop putting handcuffs on me!
+	Jacques: Curse you {Player.name}! I'll never forgive you for this!
+	MC: Take him away chief.
+Franklin: Mystery solved, I suppose.
+- And chief, there's one more thing.
+	[music path="res://assets/Tunes & Bops/Romanced.ogg" fade="0.0" volume="0.0"]
+	Franklin: Yes, an accomplice?
+	MC: More like, someone I'd like to make my partner.
+	Franklin: And who would that be?
+	- Eeliott
+		set {5Day.LoveChoice} = "Eeliott"
+		Eeliott: Oh {Player.name}, I feel the same way!
+	- Barnaby
+		set {5Day.LoveChoice} = "Barnaby"
+		Barnaby: Oh {Player.name}, I feel the same way!
+	- Jacques
+		set {5Day.LoveChoice} = "Jacques"
+		Jacques: Oh {Player.name}, I feel the same way!
+	if {5Day.CrimeChoice} == {5Day.LoveChoice}:
+		Franklin: {Player.name}
+		Franklin: The person you've accused is also the person you'd like to make your life partner?
+		Franklin: That's
+		Franklin: I mean
+		Franklin: Are you doing all right?
+		Franklin: You need a vacation from your vacation, man.
+- <Fin>
+	The end.
+	jump FIN
+
+label FIN
+[background arg="res://assets/Backgrounds/Vent Smoke.png" fade="0.0"]
+leave --All--

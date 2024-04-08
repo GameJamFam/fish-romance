@@ -1,0 +1,19 @@
+[background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
+join Franklin 1
+join Charlene 2
+join Hollandaise 3
+Hollandaise: My God, this is a nightmare.
+Franklin: Ah, main character, glad you finally showed up.
+MC: What happened?
+Franklin: Pretty much the unthinkable.
+ranklin: You know, Romeo?
+MC: ah, yes, the barista, co-worker and Charlene's brother. Why, what happened to him?
+Charlene: He got squished by a rock! Someone came in here, just dropped it on him.
+Charlene: I didn't catch it because I was taking out the trash to run this shift change, but I come back, and he squished real flat! 
+Franklin: Ah, what a clown show, this is just a terrible situation.
+Hollandaise: So not only do we have a terrorist taking out power plants, we've got a murderer
+MC: That just raises the question, what did Romeo overhear, that he shouldn't
+have heard?
+leave --All-- 
+return

@@ -1,0 +1,25 @@
+[background arg="res://assets/Backgrounds/Vent.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/BGM/IsopodPod.ogg" fade="0.0" volume="0.0" loop="false"]
+join Eeliott 1
+join Smitty 3
+Eeliott: I tell you Smitty, it's just so demoralizing not to have anybody come to your latest, show you know?
+Eeliott: I worked so hard on putting all of that art together, and I practically know everybody
+in town and yet!
+Eeliott: It was only you and hollandaise who showed up.
+Eeliott: Don't get me wrong, i'm really glad that you did, it's just...
+Smitty: Hey, listen. How many eyes you get on your art is not a reflection of you as an artist, okay?
+Smitty: You are talented, you're putting that talent to use, and you're doing it in a way that feels good to you. That's what's important!
+Smitty: It's not about fame, and it's not about money bro.
+Smitty: It's about allowing your inner consciousness to be shaped, to see and shape the world around you in such a way to communicate without words, bro.
+Smitty: It's all about what's inside your head getting out, because we're all fish bro
+Smitty: Think about it, we're all just fish bro
+Eeliott: Yeah, Smitty I know. But what even what does it mean to be a fish, Smitty?
+Smitty: Bro bro you're coming at me with language! I'm no prescriptivist you know, I'm all
+about language as a reflection of reality, not reality as a reflection of the language bro
+Eeliott: Right as always, Smitty. You always know just what to say.
+Smitty: Thanks. You wouldn't happen to have any snacks would you? I've got the munchies hard right now
+Eeliott: Yes, I got you some fishyuns. They're like funyuns, but fish.
+Smitty: baller
+leave --All--
+[music fade="0.0" volume="0.0"]
+return

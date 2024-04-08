@@ -6,4 +6,5 @@ if {1Night.DrinkDelivered} == false:
 	else:
 		Charlene: Here's the fish {1Night.Drink} you ordered.
 	leave Charlene
+[save slot="Test"]
 return

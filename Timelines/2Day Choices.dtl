@@ -25,8 +25,7 @@ set {AccessibleAreas.Station} = true
 	jump 2Day Bar/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 2Day Vent/
-- Library [if {AccessibleAreas.Library} == true][else="hide"]
-	jump 
+jump 
 - Police Station [if {AccessibleAreas.Station} == true][else="hide"]
 	jump 2Day Station/
 - Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
@@ -35,4 +34,5 @@ set {AccessibleAreas.Station} = true
 	jump 2Day Eeliott/
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
 	jump 2Day Barnaby/
+[save slot="Test"]
 jump 2Night Choices/

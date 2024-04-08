@@ -1,2 +1,23 @@
+[background arg="res://assets/Backgrounds/Eeliott’s Studio.png" fade="0.0"]
+[music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
+join Eeliott 1
+Eeliott: Hey, main character, thanks for coming,
+MC: Of course, I was curious about your art.
+Eeliott: thank you, you know, it's, well, let me show you.
+Eeliott: Well, it's mixed-media sculpture, but the thing I'm working on is integrating bioluminescent art into a space.
+Eeliott: Like, imagine being able to walk through a three-dimensional painting that lights up all around you, wouldn't that be so cool?
+MC: That would be, yeah.
+Eeliott: Plus, given that it's natural, like bioluminescent, it really just drives home this dichotomy between what is nature, what is fish made.
+Eeliott: You know, we really do have a responsibility to steward our environment, like, yeah, it's gonna be around long after we are, but if we're not careful, we can really screw things up, and I'm just worried that people don't care.
+MC: I know what you mean.
+Eeliott: Take the vent, for example. We should be trying to find sustainable other sources of energy, but, like, that energy independence is great, but there's still no reason to destroy that vent.
+MC: Well, what if nobody did it on purpose?
+Eeliott: How do you mean?
+MC: We've always been assuming that someone did this, like, maliciously. What if it was an accident?
+Eeliott: I mean, that's a pretty serious accident, even though it's not something we can't rule out. I suppose you're right.
+Eeliott: It's a good thing you have an outside perspective, I think. I guess I've just been in this town so long, I feel like I know everybody here.
+MC: You think someone did it?
+Eeliott: Not per se. I mean, I just thought it had to be the case.
+Eeliott: I mean, it's not like the rock just rolled itself.
+leave --All--
 return
-
