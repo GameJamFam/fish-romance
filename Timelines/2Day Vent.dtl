@@ -24,4 +24,4 @@ Meelody: Do take care, {Player.name}.
 set {2Day.MetMeelody} = true
 leave --All--
 [music fade="0.0" volume="0.0"]
-return
+jump 2Night Choices/

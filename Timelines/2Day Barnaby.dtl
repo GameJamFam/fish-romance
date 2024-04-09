@@ -38,4 +38,4 @@ MC: Sure.
 set {2Day.SpokeBarnaby} = true
 set {RomancePoints.Barnaby} += 1
 leave Barnaby
-return
+jump 2Night Choices/

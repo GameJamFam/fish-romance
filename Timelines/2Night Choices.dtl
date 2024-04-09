@@ -13,8 +13,7 @@ set {AccessibleAreas.Station} = false
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 2Night Vent/
 - Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
-	jump 2Night Jacques/ 
+	jump 2Night Jacques/
 - Barnaby's Dorm [if {AccessibleAreas.BarnabyHome} == true][else="hide"]
 	jump 2Night Barnaby/
-- Library [if {AccessibleAreas.Library} == true][else="hide"]
-	jump 3Day Choices/
+jump 3Day Choices/

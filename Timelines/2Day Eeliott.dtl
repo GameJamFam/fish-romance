@@ -1,6 +1,7 @@
 [background arg="res://assets/Backgrounds/Eeliott’s Studio.png" fade="0.0"]
 [music path="res://assets/Tunes & Bops/Wayfall/Ambience/Shrimp Click Ambience.ogg" fade="0.0" volume="0.0"]
 join Eeliott 1
+return
 Eeliott: Hey, main character, thanks for coming,
 MC: Of course, I was curious about your art.
 Eeliott: thank you, you know, it's, well, let me show you.
@@ -19,5 +20,4 @@ Eeliott: It's a good thing you have an outside perspective, I think. I guess I'v
 MC: You think someone did it?
 Eeliott: Not per se. I mean, I just thought it had to be the case.
 Eeliott: I mean, it's not like the rock just rolled itself.
-leave --All--
-return
+jump 2Night Choices/

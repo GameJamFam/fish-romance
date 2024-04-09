@@ -24,7 +24,7 @@
 "display_name": "Jacques",
 "mirror": false,
 "nicknames": ["JJ"],
-"offset": Vector2(0, 40),
+"offset": Vector2(0, 0),
 "portraits": {
 "Far Away": {
 "export_overrides": {
@@ -43,7 +43,7 @@
 "ignore_char_scale": false,
 "mirror": false,
 "offset": Vector2(0, 40),
-"scale": 0.2,
+"scale": 1.0,
 "scene": ""
 },
 "Mad": {
@@ -71,7 +71,7 @@
 "image": "\"res://assets/Portraits/Jaques (Shimp)/Jaques_Neutral.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 40),
 "scale": 1.0,
 "scene": ""
 },

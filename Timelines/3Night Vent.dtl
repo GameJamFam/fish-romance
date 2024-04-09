@@ -15,4 +15,4 @@ set {RomancePoints.Barnaby} += 1
 Barnaby: Thank you so much!
 leave --All--
 [music fade="0.0" volume="0.0"]
-return
+jump 4DayChoices/

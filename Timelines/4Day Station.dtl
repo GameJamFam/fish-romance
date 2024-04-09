@@ -20,4 +20,4 @@ MC: Hollandaise, that is precisely what I'm telling you, and I am looking for a 
 Hollandaise: If I beat you will you at least spend tonight investigating? We're going to run out of power.
 MC: Well, we'll see about that.
 leave --All--
-return
+jump 4Night Choices/

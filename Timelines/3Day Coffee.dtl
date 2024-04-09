@@ -13,5 +13,5 @@ Barnaby: We don't have nearly the resources here, our only cop is Franklin and h
 MC: Sure thing.
 You whittle the hours away with Barnaby.
 set {RomancePoints.Barnaby} += 2
-leave --All-- 
-return
+leave --All--
+jump 3Night Choices/

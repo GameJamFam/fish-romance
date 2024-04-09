@@ -19,4 +19,4 @@ Barnaby: But at least you must have had some interesting cases that you solved.
 MC: Oh, let me tell you...
 set {RomancePoints.Barnaby} += 2
 leave --All--
-return
+jump 3Day Choices/

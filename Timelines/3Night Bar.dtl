@@ -1,12 +1,12 @@
 [background arg="res://assets/Backgrounds/Cafe.png" fade="0.0"]
 [music path="res://assets/Tunes & Bops/CoffeeShop.ogg" fade="0.0" volume="0.0"]
-Looks like there's two conversations going on, one between Smitty and Eeliott and another between Jacques and Charlene. 
+Looks like there's two conversations going on, one between Smitty and Eeliott and another between Jacques and Charlene.
 - Join Jacques and Charlene
 	jump JConvo
 - Join Eeliott and Smitty
 	jump EConvo
 label JConvo
-Jacques:Ah, welcome traveller! You've stumbled upon my RPG night. You enter the dungeons of Ba'al Timor.
+Jacques: Ah, welcome traveller! You've stumbled upon my RPG night. You enter the dungeons of Ba'al Timor.
 MC: What?
 Jacques: What do you mean you haven't heard of it? Haven't you played the latest Demono game?
 MC: I don't really.
@@ -34,31 +34,31 @@ Jacques: Of course, their studies have taken a mental toll and they are generall
 jump end
 label EConvo
 Smitty: So I says to him, I says, listen, if you're going to come at me with a cantaloupe, you're going to be your best not miss.
-Eeliott: Got him, Smitty. Been any good shows lately? 
-Smitty: As a matter of fact, I have. There's this new band out called, Satan's Trusty Razor. They're pretty hardcore. Oh yeah? I like some hardcore music. 
-Eeliott: What do they do? 
-Smitty: Oh man, they got this flautist bro. He just, it's the notes he's playing, it's the notes he's not playing. 
+Eeliott: Got him, Smitty. Been any good shows lately?
+Smitty: As a matter of fact, I have. There's this new band out called, Satan's Trusty Razor. They're pretty hardcore. Oh yeah? I like some hardcore music.
+Eeliott: What do they do?
+Smitty: Oh man, they got this flautist bro. He just, it's the notes he's playing, it's the notes he's not playing.
 Smitty: Like, dude, I'm telling you, listen to this EP of theirs and have your gourd friggin blown, dude.
 Smitty: I apologize to your socks in the event they become rocked off, but this is gonna shake your god-dang melon, dude.
 Eeliott: Smitty, this is just described as 45 minutes of nonstop flute action. I do not see how that is going to be the case.
-Smitty: Bro, trust me on this one. Have I ever given you a bad rec? 
-Eeliott: Smitty, you also sent me a playlist that was that had five tracks were just a Monster Mesh by Lenny Capizzi. And then one track was just Africa by Toto. 
+Smitty: Bro, trust me on this one. Have I ever given you a bad rec?
+Eeliott: Smitty, you also sent me a playlist that was that had five tracks were just a Monster Mesh by Lenny Capizzi. And then one track was just Africa by Toto.
 Smitty: Yeah, man.
-Smitty: It's a little palate cleanser after a good night of Monster Mesh. 
+Smitty: It's a little palate cleanser after a good night of Monster Mesh.
 Eeliott: Smitty, you gave that to me in July. It's not even Halloween themed.
 Eeliott: Like, I might understand it as like, a half-hearted party mix, but...
-Smitty: Eeliott, you're killing me. 
+Smitty: Eeliott, you're killing me.
 Eeliott: Smitty, listen.
 Eeliott: I know you've got good taste in music. I've seen your record collection of... Frankly, it's amazing to me that in the last 100 years of recorded sound, you have amassed such a library.
 Eeliott: You've got cuts so deep that, frankly, they should be in a museum.
 Smitty: Eeliott, thank you. But to say my mixes are wack, that cuts even deeper than my deepest cuts, bro.
-MC: What kind of music do you like, Eeliott? 
+MC: What kind of music do you like, Eeliott?
 Eeliott: Oh, me? I've always liked stuff that's a little homegrown, you know?
 Eeliott: So long as it doesn't have too big of a corporate backing, and so long as artists are actually allowed to say what they want.
 Eeliott: Instead of having to change their vision to some label exec's idea of what the youth want to hear.
 Smitty: Like, Elliot's tastes are so closed off to the world of hyper-processed pop, dude.
 Smitty: I would understand. Like, don't get me wrong, I enjoy as much underground cassette tape choice swaps as the next guy.
-Smitty: But there's nothing wrong with some pop, man. Sprinkling a little death metal. Maybe some early 2000s video games rap for flavor? 
+Smitty: But there's nothing wrong with some pop, man. Sprinkling a little death metal. Maybe some early 2000s video games rap for flavor?
 Eeliott: Smitty. Again.
 Eeliott: You've got an amazing record collection. But your mix tapes?
 Eeliott: They say there's not too much of a good thing, but the opposite isn't true.
@@ -69,5 +69,5 @@ Smitty: Bro, that is simultaneously the most wise and most hurtful thing I have 
 Eeliott: I don't get Smitty. Like, how can someone have such amazing taste in music, but also just like everything? It doesn't make sense to me.
 jump end
 label end
-leave --All-- 
-return
+leave --All--
+jump 4DayChoices/

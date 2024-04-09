@@ -1,32 +1,33 @@
+[background arg="res://assets/Backgrounds/Jaques Room.png" fade="0.0"]
 You decide to head over to Jacques Mansion-Gym.
 It's a massive fortress of home with huge windows overlooking the bluffs and plains.
 Jacques: Ah, {Player.name}. So good of you to join me. Please do come in.
 You are ushered into what appears to be a gym connected to about 30 different rooms, each with their own function. The gym takes up the largest presence in the building.
 Jacques: Please, please, have a seat. Some coffee for you. I roasted myself. And grow it.
-MC: Sure. 
+MC: Sure.
 Jacques: Of course. Now then.
 Jacques: I do thank you for coming on such short notice. It was such a pleasure to meet you last night.
-Jacques: I couldn't help but try and get some more time with you to myself. There's so much I'd love totalk to you about. 
+Jacques: I couldn't help but try and get some more time with you to myself. There's so much I'd love totalk to you about.
 MC: Please continue. I'm all ears.
 Jacques: Well, it's just that I'm an aspiring writer, you see. And I've begun writing my own fantasy series.
 Jacques: I call it [i]Magical Clock[/i].
-Jacques: It's a working title, of course. 
+Jacques: It's a working title, of course.
 MC: Oh no, that sounds like a finished title to me.
-MC: Quite the concept, too. 
+MC: Quite the concept, too.
 Jacques: Wait until you hear the rest of it. So imagine there was a magical clock, and every minute it cast a new spell on the world.
 MC: This is fascinating stuff.
 Jacques: Well, these spells do various things. One spell for one minute might make everything green. Another spell might make everyone between six to ten inches taller.
 Jacques: But one day someone figures out what the next spell, how to predict what the next spell is
 going to be. So he uses that to start making everybody's lives better by giving them some
-forewarning. 
-MC:Incredible stuff.
-Jacques: I know. But then it turns out that government already knew this, and so they try to stop him. He has to go on the run, using his calculations against the government, to outsmart the agents following him at every turn. 
-MC: What an incredible story. What's the main character's name? 
+forewarning.
+MC: Incredible stuff.
+Jacques: I know. But then it turns out that government already knew this, and so they try to stop him. He has to go on the run, using his calculations against the government, to outsmart the agents following him at every turn.
+MC: What an incredible story. What's the main character's name?
 Jacques: Well, that's just the thing. I wasn't sure. What do you name a character that's smart and handsome and strong and funny and good-hearted?
 Jacques: I don't know, main character. What would you name a character like that?
-- I'd name it after myself. 
+- I'd name it after myself.
 	Jacques: Yes, naming it after myself.
-	Jacques: Oh, that is a good idea. Thank you, main character. 
+	Jacques: Oh, that is a good idea. Thank you, main character.
 - I'd name it after you.
 	Jacques: Oh, main character, I'm flattered.
 	Jacques: I wouldn't want to be accused of self-inserting something into a story, but while I can see the resemblance.
@@ -38,5 +39,5 @@ Jacques: I don't know, main character. What would you name a character like that
 The hours pass...
 set {RomancePoints.Jacques} += 2
 set {2Day.SpokeJacques} = true
-leave --All-- 
-return
+leave --All--
+jump 3Day Choices/

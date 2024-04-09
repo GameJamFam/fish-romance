@@ -4,6 +4,7 @@ join Jacques 3
 join Franklin 4
 [music path="res://assets/Tunes & Bops/Wayfall/Ambience/Water Ambience Basic 1.ogg" fade="0.0" volume="0.0"]
 [background arg="res://assets/Backgrounds/Police Station.png" fade="0.0"]
+It's the start of a new day. The chief of police has gathered everyone in the station.
 Franklin: Well main character This is it. Everybody's here, and I think we're out of time.
 Franklin: Who done it?
 MC: Chief, I know exactly who did it, and it was

@@ -17,4 +17,4 @@ MC: Franklin, what I'm suggesting may not be ethical, but I'd like to play you a
 MC: Let's have a tournament of our own.
 Franklin: Wow, that sounds like a great idea! I'll stock up on the donuts.
 leave Franklin
-return
+jump 3Night Choices/

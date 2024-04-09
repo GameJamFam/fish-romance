@@ -104,6 +104,7 @@ size_flags_vertical = 3
 text = "Credits"
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Main/VBoxContainer"]
+visible = false
 layout_mode = 2
 offset_left = 1065.0
 offset_top = 558.0

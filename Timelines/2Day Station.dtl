@@ -13,4 +13,4 @@ Franklin: Yeah, pool. Ever played it before? They have pool where you're from?
 MC: No, I've never played it before.
 Franklin: Oh, man. Well, we gotta try it right now.
 leave Franklin
-return
+jump 2Night Choices/

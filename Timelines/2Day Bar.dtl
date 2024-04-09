@@ -48,4 +48,4 @@ MC: Best be off to my business.
 Hollandaise: Have a good day, {Player.name}.
 MC: You as well.
 [save slot="Test"]
-return
+jump 2Night Choices/

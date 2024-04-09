@@ -28,4 +28,4 @@ Barnaby: Want to play some Tetris?
 MC: Sure.
 set {RomancePoints.Barnaby} += 2
 leave --All--
-return
+jump 4Night Choices/

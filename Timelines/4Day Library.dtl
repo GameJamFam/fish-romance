@@ -13,7 +13,7 @@ Barnaby: It's nice and quiet.
 Barnaby: You're surrounded by knowledge, and nobody tries to stop you from reading.
 MC: I can see why you'd like it, then.
 Barnaby: Yeah.
-You can see in the pile of books next to Barnaby. A few entries catch your eye: How to Talk to Cops,
+You can see in the pile of books next to Barnaby. A few entries catch your eye\: How to Talk to Cops,
 How to Talk to Oeople You Like, How To Talk.
 Barnaby: I've been trying to practice my conversational skills a little more. Branch out, you know, try new things.
 MC: Good for you.
@@ -22,5 +22,5 @@ Barnaby: Even after joining a fraternity, I'm still feeling a little directionle
 His voice trails him off.
 Barnaby: And I thought it might be good for us to research more about what in the natural world might have caused vent.
 Barnaby: If you'd like to join me, of course.
-leave --All-- 
-return
+leave --All--
+jump 4Night Choices/

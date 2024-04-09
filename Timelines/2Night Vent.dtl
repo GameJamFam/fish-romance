@@ -36,4 +36,4 @@ Eeliott: Odd.
 set {RomancePoints.Eeliott} += 1
 leave --All--
 [music fade="0.0" volume="0.0"]
-return
+jump 3Day Choices/

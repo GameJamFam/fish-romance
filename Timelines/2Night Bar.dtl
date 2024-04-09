@@ -86,5 +86,5 @@ Meelody: Zero to two drinks, he's an incoherent mess. Just nonsense.
 Meelody: Then three and above, he just stops talking, he just listens.
 MC: ...
 The night passes with idle conversation.
-leave --All-- 
-return
+leave --All--
+jump 3Day Choices/

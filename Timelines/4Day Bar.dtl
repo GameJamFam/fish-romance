@@ -4,7 +4,7 @@ Stopping by the coffee shop, you overhear a conversation between Charlene and Sm
 join Charlene 1
 join Smitty 2
 Smitty: All I'm saying is, it has been odd that Barnaby is spending so much time out near the vent.
-Smitty:It's like he's compelled to keep going back there or something. I mean, then it's odd, but, you know, you can't fault him for it. 
+Smitty: It's like he's compelled to keep going back there or something. I mean, then it's odd, but, you know, you can't fault him for it.
 Charlene: Everyone's interested in what happened.
 Charlene: Plus, there's a certain thrill if you're able to figure it out before the police do.
 Charlene: Perhaps you might even get a reward. Yeah, I mean, you might get a reward, but who even knows?
@@ -13,7 +13,7 @@ Smitty: No. No, no, or at least, I don't know how he could have done it even.
 Smitty: He's not, definitely not strong enough to push over a boulder.
 Smitty: Even then, I don't know who he could have recruited for help unless it was a freak accident and he just never reported it.
 Charlene: Oh, well, some things are mysteries for a reason.
-Charlene: That's what the detective is for, after all. 
+Charlene: That's what the detective is for, after all.
 Smitty: Yeah, very true. Hopefully, they can get to the bottom of it.
-leave --All-- 
-return
+leave --All--
+jump 4Night Choices/

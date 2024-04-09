@@ -25,7 +25,6 @@ set {AccessibleAreas.Station} = true
 	jump 2Day Bar/
 - Geothermal Vent [if {AccessibleAreas.Vent} == true][else="hide"]
 	jump 2Day Vent/
-jump 
 - Police Station [if {AccessibleAreas.Station} == true][else="hide"]
 	jump 2Day Station/
 - Jacque's Mansion [if {AccessibleAreas.JacquesHome} == true][else="hide"]
